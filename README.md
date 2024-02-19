@@ -1,31 +1,16 @@
-## YOLOX：You Only Look Once目标检测模型在Pytorch当中的实现
+## 基于pytorch的yolox实现及相关流程
 ---
 
 ## 目录
 
-1. [相关仓库 Related code](#相关仓库)
-2. [性能情况 Performance](#性能情况)
-3. [实现的内容 Achievement](#实现的内容)
-4. [所需环境 Environment](#所需环境)
-5. [文件下载 Download](#文件下载)
-6. [训练步骤 How2train](#训练步骤)
-7. [预测步骤 How2predict](#预测步骤)
-8. [评估步骤 How2eval](#评估步骤)
+1. [性能情况 Performance](#性能情况)
+2. [实现的内容 Achievement](#实现的内容)
+3. [所需环境 Environment](#所需环境)
+4. [文件下载 Download](#文件下载)
+5. [训练步骤 How2train](#训练步骤)
+6. [预测步骤 How2predict](#预测步骤)
+7. [评估步骤 How2eval](#评估步骤)
 
-
-## 相关仓库
-| 模型 | 路径 |
-| :----- | :----- |
-YoloV3 | https://github.com/bubbliiiing/yolo3-pytorch  
-Efficientnet-Yolo3 | https://github.com/bubbliiiing/efficientnet-yolo3-pytorch  
-YoloV4 | https://github.com/bubbliiiing/yolov4-pytorch
-YoloV4-tiny | https://github.com/bubbliiiing/yolov4-tiny-pytorch
-Mobilenet-Yolov4 | https://github.com/bubbliiiing/mobilenet-yolov4-pytorch
-YoloV5-V5.0 | https://github.com/bubbliiiing/yolov5-pytorch
-YoloV5-V6.1 | https://github.com/bubbliiiing/yolov5-v6.1-pytorch
-YoloX | https://github.com/bubbliiiing/yolox-pytorch
-YoloV7 | https://github.com/bubbliiiing/yolov7-pytorch
-YoloV7-tiny | https://github.com/bubbliiiing/yolov7-tiny-pytorch
 
 ## 性能情况
 | 训练数据集 | 权值文件名称 | 测试数据集 | 输入图片大小 | mAP 0.5:0.95 | mAP 0.5 |
@@ -45,7 +30,7 @@ YoloV7-tiny | https://github.com/bubbliiiing/yolov7-tiny-pytorch
 - [x] SimOTA：为不同大小的目标动态匹配正样本。
 
 ## 所需环境
-pytorch==1.2.0
+pytorch>=1.2.0
 
 ## 文件下载
 训练所需的权值可在上述例表中下载。  
