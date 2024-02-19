@@ -2,24 +2,16 @@
 ---
 
 ## 目录
-1. [仓库更新 Top News](#仓库更新)
-2. [相关仓库 Related code](#相关仓库)
-3. [性能情况 Performance](#性能情况)
-4. [实现的内容 Achievement](#实现的内容)
-5. [所需环境 Environment](#所需环境)
-6. [文件下载 Download](#文件下载)
-7. [训练步骤 How2train](#训练步骤)
-8. [预测步骤 How2predict](#预测步骤)
-9. [评估步骤 How2eval](#评估步骤)
-10. [参考资料 Reference](#Reference)
 
-## Top News
-**`2022-04`**:**支持多GPU训练，新增各个种类目标数量计算，新增heatmap。**  
+1. [相关仓库 Related code](#相关仓库)
+2. [性能情况 Performance](#性能情况)
+3. [实现的内容 Achievement](#实现的内容)
+4. [所需环境 Environment](#所需环境)
+5. [文件下载 Download](#文件下载)
+6. [训练步骤 How2train](#训练步骤)
+7. [预测步骤 How2predict](#预测步骤)
+8. [评估步骤 How2eval](#评估步骤)
 
-**`2022-03`**:**进行了大幅度的更新，支持step、cos学习率下降法、支持adam、sgd优化器选择、支持学习率根据batch_size自适应调整、新增图片裁剪。**  
-BiliBili视频中的原仓库地址为：https://github.com/bubbliiiing/yolox-pytorch/tree/bilibili
-
-**`2021-10`**:**创建仓库，支持不同尺寸模型训练、支持大量可调整参数，支持fps、视频预测、批量预测等功能。**   
 
 ## 相关仓库
 | 模型 | 路径 |
@@ -134,6 +126,3 @@ img/street.jpg
 3. 利用voc_annotation.py划分测试集后，前往get_map.py文件修改classes_path，classes_path用于指向检测类别所对应的txt，这个txt和训练时的txt一样。评估自己的数据集必须要修改。
 4. 在yolo.py里面修改model_path以及classes_path。**model_path指向训练好的权值文件，在logs文件夹里。classes_path指向检测类别所对应的txt。**  
 5. 运行get_map.py即可获得评估结果，评估结果会保存在map_out文件夹中。
-
-## Reference
-https://github.com/Megvii-BaseDetection/YOLOX
